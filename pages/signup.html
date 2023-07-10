@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style1.css">
+    <title>Create an Account</title>
+</head>
+<body>
+    <div id="div-1">
+        <h1> Create an Account</h1>
+        <h3> It's quick an easy</h3>
+        <hr/>
+        <form action="../login.html">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="text" id="email" placeholder="Mobile Number or Email address">
+            <input type="password" placeholder="New Password">
+            <fieldset>
+                <legend>Date of Birth</legend>
+                <select id="date" name="date">
+                    <option selected>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                </select>
+                <select id="month" name="month">
+                    <option value="January" selected>January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                  </select>
+                  <select id="year" name="year">
+                  </select>
+            </fieldset>
+            <fieldset>
+                <legend>Gender</legend>
+                <label>Male</label>
+                <input type="radio" name="gender" class="gender" value="Male">
+                <label>Female</label>
+                <input type="radio" name="gender" class="gender" value="Female">
+                <label>Custom</label>
+                <input type="radio" name="gender" class="gender" value="Gay">
+            </fieldset>
+            <p>People who use our service may have uploaded your contact information to Facebook. Learn more.<br/>  
+
+                By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time.
+            </p>
+            <input type="submit"  value="Create Account">    
+        </form>
+    </div>
+
+</body>
+<script>
+    var selectYear = document.getElementById("year");
+    var currentYear = new Date().getFullYear();
+  
+    for (var year = currentYear; year >= 1920; year--) {
+      var option = document.createElement("option");
+      option.value = year;
+      option.text = year;
+      selectYear.appendChild(option);
+    }
+  </script>
+</html>

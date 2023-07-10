@@ -1,0 +1,26 @@
+Ayan Murad
+18:38
+var arr = ["ayan"]
+console.log(arr.length)
+var c = arr.push("murad")
+console.log(console.log(arr.length))
+var arr = ["ayan"]
+console.log(arr.length)
+var arrTotalLength = arr.push("murad")
+console.log(arrTotalLength)
+Ayan Murad
+18:41
+var num = prompt("----")
+console.log(num)
+Ayan Murad
+18:43
+var num = prompt("----")
+console.log(num, typeof num)
+Ayan Murad
+18:45
+var num = alert("----")
+console.log(num, typeof num)
+You
+18:46
+var num = 1
+gtg-cjhm-cpf
